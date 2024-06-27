@@ -79,11 +79,17 @@ body {
     padding: 7px 14px;
     background-color: #f8f8f8;
     outline: none;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .search_btns button:hover {
     border: 1px solid lightgray;
+}
+
+@media (max-width: 650px) {
+    .searchbar {
+        width: 85vw;
+    }
 }
