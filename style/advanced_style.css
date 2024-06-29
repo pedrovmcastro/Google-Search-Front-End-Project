@@ -1,0 +1,98 @@
+* {
+    margin: 0; /* ensure there is no unwanted spacing from browsers */
+    padding: 0;
+    box-sizing: content-box; /* no takes borders and padding into account when calculating element size */
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 5px 20px; /*[top] [right] [bottom] [left];*/
+}
+
+header img {
+    width: 74px;
+}
+
+.user-menu {
+    display: flex;
+}
+
+.user-menu a {
+    font: 13px/27px Roboto, Arial, sans-serif;
+    text-decoration: none;
+}
+
+.user-menu a:hover {
+    text-decoration: underline;
+}
+
+.user-menu a,
+.user-menu span {
+    margin-left: 10px;
+}
+
+.appbar {
+    font-size: 20px;
+    color: #d93025;
+    padding: 25px 35px 20px 35px;
+    margin-left: 10px;
+}
+
+.section-line {
+    border-bottom: 1px solid #ebebeb;
+}
+
+section {
+    max-width: 1140px;
+    min-width: 200px;
+    width: 96%;
+    margin: 40px 2% 0 45px;
+}
+
+.form-header1 {
+    float: left;
+    min-width: 167px;
+    width: 16%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.form-header2 {
+    float: left;
+    min-width: 167px;
+    min-height: 41px;
+    width: 50%;
+}
+
+.form-header3 {
+    float: left;
+    width: 33%;
+    font-size: 13px;
+    font-weight: 700;
+    color: #777;
+    padding-left: 5px;
+}
+
+.form.r.hdr3 {
+    height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.form-content {
+    clear: both;
+}
+
+
