@@ -93,6 +93,13 @@ body {
     border: 1px solid lightgray;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
 @media (max-width: 650px) {
     .searchbar {
         width: 85vw;
