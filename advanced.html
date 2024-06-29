@@ -2,23 +2,50 @@
 <html lang="en">
     <head>
         <title>Google Advanced Search</title>
+        <link rel="stylesheet" href="style/advanced_style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="icon" href="img/favicon.ico">
     </head>
+
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Google Logo">
+        </div>
+        <div class="user-menu">
+            <a href="index.html">Home</a>
+            <span class="material-icons" id="apps">apps</span>
+            <span class="material-icons" id="account_circle">account_circle</span>
+        </div>
+    </header>
+    
     <body>
-        <form action="https://www.google.com/search">
-            <label for="as_q">
-                all these words:<input type="text" name="as_q" id="as_q">
-            </label><br>
-            <label for="as_epq">
-               this exact word or phrase:<input type="text" name="as_epq" id="as_epq">
-            </label><br>
-            <label for="as_oq">
-                any of these words:<input type="text" name="as_oq" id="as_oq">
-            </label><br>
-            <label for="as_eq">
-                none of these words:<input type="text" name="as_eq" id="as_eq">
-            </label><br>
-            <input type="submit" value="Google Advanced Search">
-        </form>
-        <a href="index.html">Voltar</a>
+        <div class="appbar">
+            <label>Advanced search</label>
+        </div>
+
+        <div class="section-line"></div>
+
+        <section>
+            <form action="https://www.google.com/search">
+                <!-- Form header -->
+                <div class="form-header">
+                    <div class="form-header1">
+                        <span>Find pages with...</span>
+                    </div>
+                    <div class="form-header2"></div>
+                    <div class="form-header3">
+                        <div class="form-r-hdr3">
+                            Do this in the search box.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form content -->
+                <div class="form-content"></div>
+               
+            </form>
+        </section>
+
+        
     </body>
 </html>
