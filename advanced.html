@@ -27,25 +27,55 @@
 
         <section>
             <form action="https://www.google.com/search">
-                <!-- Form header -->
-                <div class="form-header">
-                    <div class="form-header1">
-                        <span>Find pages with...</span>
-                    </div>
-                    <div class="form-header2"></div>
-                    <div class="form-header3">
-                        <div class="form-r-hdr3">
-                            Do this in the search box.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Form content -->
-                <div class="form-content"></div>
-               
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="th1">Find pages with...</th>
+                            <th class="th2"></th>
+                            <th class="th3">Do this in the search box.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="t1">all these words:</td>
+                            <td class="t2"><input type="text" name="as_q" id="as_q"></td>
+                            <td class="t3">
+                                Enter the important words:
+                                <span>rat terrier tricolor</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="t1">this exact word or phrase:</td>
+                            <td class="t2"><input type="text" name="as_epq" id="as_epq"></td>
+                            <td class="t3">
+                                Put exact words in quotes:
+                                <span>"rat terrier"</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="t1">any of these words:</td>
+                            <td class="t2"><input type="text" name="as_oq" id="as_oq"></td>
+                            <td class="t3">
+                                Type OR between all the words you want:
+                                <br><span>miniature OR standard</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="t1">none of these words:</td>
+                            <td class="t2"><input type="text" name="as_eq" id="as_eq"></td>
+                            <td class="t3">
+                                Put a minus sign before words you don't want:
+                                <br><span>-rodent, -"Jack Russell"</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </form>
         </section>
 
+        <footer>
+            Project created by Pedro Vitor Marques de Castro
+        </footer>
         
     </body>
 </html>
