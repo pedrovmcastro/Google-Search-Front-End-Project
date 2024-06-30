@@ -1,14 +1,13 @@
 * {
     margin: 0; /* ensure there is no unwanted spacing from browsers */
     padding: 0;
-    box-sizing: content-box; /* no takes borders and padding into account when calculating element size */
+    box-sizing: border-box; /* no takes borders and padding into account when calculating element size */
     font-family: Arial, sans-serif;
     line-height: 1.5;
 }
 
 body {
     min-height: 100%;
-    position: relative;
 }
 
 header {
@@ -51,48 +50,115 @@ header img {
 }
 
 section {
-    max-width: 1140px;
-    min-width: 200px;
-    width: 96%;
-    margin: 40px 2% 0 45px;
+    margin: 35px;
+    max-width: 1000px;
+    font-family: Arial, sans-serif;
 }
 
-.form-header1 {
-    float: left;
-    min-width: 167px;
-    width: 16%;
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+/*top-right-bot-left*/
+th, td {
+    padding: 12px 0 4px 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th.th1 {
+    padding: 12px 8px 12px 8px;
+    min-width: 200px;
+    width: 8%;
     font-size: 16px;
     font-weight: 500;
     color: #333;
     height: 30px;
-    display: table-cell;
     vertical-align: middle;
 }
 
-.form-header2 {
-    float: left;
+th.th2 {
+    padding: 12px 0 12px 0;
     min-width: 167px;
-    min-height: 41px;
-    width: 50%;
+    width: 26%;
 }
 
-.form-header3 {
-    float: left;
-    width: 33%;
+th.th3 {
+    padding: 12px 8px 12px 8px;
+    width: 14%;
     font-size: 13px;
     font-weight: 700;
     color: #777;
     padding-left: 5px;
-}
-
-.form.r.hdr3 {
     height: 30px;
-    display: table-cell;
     vertical-align: middle;
 }
 
-.form-content {
-    clear: both;
+td.t1 {
+  padding: 12px 0 4px 8px;  
+  min-width: 140px;
+  width: 13%;
+  height: 30px;
+  color: #222;
+  font-size: 13px;
+  line-height: 16px;
+  vertical-align: middle;
 }
 
+td.t2 {
+    padding: 12px 0 4px 0;
+    min-width: 167px;
+    width: 50%;
+}
+
+td.t3 {
+    width: 32%;
+    min-width: 160px;
+    margin: 0;
+    color: #555;
+    font-size: 11px;
+    padding-left: 5px;
+    position: relative;
+}
+
+td input[type="text"] {
+    width: 100%;
+    max-width: 570px;
+    padding: 4px 4px 4px 0;
+    border: 1px solid #ccc;
+
+}
+
+td span {
+    display: inline-block;
+    padding: 1px 6px;
+    font-family: monospace;
+    font-size: 11px;
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+@media (max-width: 890px) {
+    th.th3, td.t3 {
+        display: none;
+    }
+    section {
+        width: 586px;
+    }
+    th.th2 {
+        width: 50vw;
+    }
+    th.th1 {
+        min-width: 140px; /* Largura mínima para coluna 1 no breakpoint */
+        width: auto;
+    }
+}
 
